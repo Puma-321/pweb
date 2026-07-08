@@ -5,59 +5,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atividade 10</title>
     <style type="text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #222222;
+            padding: 12px 20px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+
         a:link {
-            color: blue;
             text-decoration: none;
         }
 
         a:visited {
-            color: purple;
+            color: #cccccc;
         }
 
-        a:hover {
-            background-color: yellow;
+        nav a:hover {
+            color: #ffcc00;
+            background-color: transparent;
         }
 
         a:active {
             color: red;
         }
 
+        h1 {
+            font-size: 22px;
+        }
+
         header {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
         }
 
         .noticia {
             display: flex;
             justify-content: space-between;
-            width: 400px;
-            border-bottom: 1px solid #cccccc;
-            padding-bottom: 10px;
+            gap: 10px;
+            border-bottom: 1px solid #dddddd;
+            padding-bottom: 12px;
         }
 
         .fonte {
             font-weight: bold;
-            font-size: 14px;
+            font-size: 13px;
+            color: #d32f2f;
+            margin: 0 0 5px 0;
         }
 
         .manchete {
-            margin: 5px 0;
+            margin: 0 0 5px 0;
+            font-size: 15px;
+            line-height: 1.3;
         }
 
         .horario {
             color: gray;
             font-size: 12px;
+            margin: 0;
         }
 
         .thumb {
-            width: 70px;
-            height: 70px;
-            background-color: lightgray;
+            width: 80px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 4px;
+            flex-shrink: 0;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: gray;
+            font-size: 13px;
         }
     </style>
 </head>
 <body>
+
+    <nav>
+        <a href="#">Início</a>
+        <a href="#">Esportes</a>
+        <a href="#">Tecnologia</a>
+    </nav>
 
     <h1>Tag header</h1>
 
@@ -69,7 +112,7 @@
                 <p class="manchete">Preços no mercado livre operam próximos à estabilidade apesar de seca...</p>
                 <p class="horario">2 horas atrás</p>
             </div>
-            <div class="thumb"></div>
+            <img class="thumb" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCI+PHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjMTU2NWMwIi8+PHRleHQgeD0iNDAiIHk9IjQ4IiBmb250LXNpemU9IjI4IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIj5JPC90ZXh0Pjwvc3ZnPg==">
         </div>
 
         <div class="noticia">
@@ -78,7 +121,7 @@
                 <p class="manchete">Nobel da Paz: conheça nomes cotados para o prêmio deste ano, que será conhecido nest...</p>
                 <p class="horario">3 horas atrás</p>
             </div>
-            <div class="thumb"></div>
+            <img class="thumb" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCI+PHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjYzYyODI4Ii8+PHRleHQgeD0iNDAiIHk9IjQ4IiBmb250LXNpemU9IjI4IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIj5DPC90ZXh0Pjwvc3ZnPg==">
         </div>
 
         <div class="noticia">
@@ -87,7 +130,7 @@
                 <p class="manchete">Três Poderes jamais devem avançar sobre "competências alheias", diz Arthur Lira</p>
                 <p class="horario">4 horas atrás</p>
             </div>
-            <div class="thumb"></div>
+            <img class="thumb" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCI+PHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjNmExYjlhIi8+PHRleHQgeD0iNDAiIHk9IjQ4IiBmb250LXNpemU9IjI4IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIj5RPC90ZXh0Pjwvc3ZnPg==">
         </div>
 
         <div class="noticia">
@@ -96,7 +139,7 @@
                 <p class="manchete">Japão inicia segunda fase de despejo de água da central nuclear de Fukushima</p>
                 <p class="horario">7 horas atrás</p>
             </div>
-            <div class="thumb"></div>
+            <img class="thumb" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCI+PHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjMmU3ZDMyIi8+PHRleHQgeD0iNDAiIHk9IjQ4IiBmb250LXNpemU9IjI4IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIj5SPC90ZXh0Pjwvc3ZnPg==">
         </div>
 
         <div class="noticia">
@@ -105,7 +148,7 @@
                 <p class="manchete">Avião derrapa e explode em aeroporto em Cuiabá; duas pessoas morreram</p>
                 <p class="horario">6 horas atrás</p>
             </div>
-            <div class="thumb"></div>
+            <img class="thumb" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCI+PHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjZWY2YzAwIi8+PHRleHQgeD0iNDAiIHk9IjQ4IiBmb250LXNpemU9IjI4IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIj5UPC90ZXh0Pjwvc3ZnPg==">
         </div>
 
         <div class="noticia">
@@ -114,20 +157,10 @@
                 <p class="manchete">Rompimento de lago glacial após fortes chuvas deixa 14 mortos e 102 desaparecidos...</p>
                 <p class="horario">14 horas atrás</p>
             </div>
-            <div class="thumb"></div>
+            <img class="thumb" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI4MCI+PHJlY3Qgd2lkdGg9IjgwIiBoZWlnaHQ9IjgwIiBmaWxsPSIjMzc0NzRmIi8+PHRleHQgeD0iNDAiIHk9IjQ4IiBmb250LXNpemU9IjI4IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9IkFyaWFsIj5HPC90ZXh0Pjwvc3ZnPg==">
         </div>
 
     </header>
-
-    <hr>
-
-    <nav>
-        <a href="#">Início</a>
-        <a href="#">Esportes</a>
-        <a href="#">Tecnologia</a>
-    </nav>
-
-    <hr>
 
     <footer>
         <p>Atividade 10 - Programação Web</p>
