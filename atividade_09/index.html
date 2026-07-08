@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 09</title>
+    <style type="text/css">
+        .conteudo {
+            width: 600px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .caixa {
+            width: 120px;
+            height: 80px;
+            padding: 10px;
+        }
+
+        #absoluta {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: lightcoral;
+        }
+
+        #relativa {
+            position: relative;
+            top: 15px;
+            left: 15px;
+            background-color: lightblue;
+        }
+
+        #fixa {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Atividade 09 - Posicionamento</h1>
+
+    <div class="conteudo">
+        <p>Conteúdo principal, usado como referência para as caixas abaixo.</p>
+
+        <div class="caixa" id="absoluta">position: absolute</div>
+        <div class="caixa" id="relativa">position: relative</div>
+    </div>
+
+    <div class="caixa" id="fixa">position: fixed</div>
+
+    <hr>
+
+    <p><a href="extra.html">Atividade extra</a></p>
+
+</body>
+</html>
