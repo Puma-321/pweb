@@ -22,55 +22,110 @@
             color: red;
         }
 
-        .card {
-            border: 1px solid black;
-            padding: 10px;
-            margin-bottom: 10px;
+        header {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .noticia {
+            display: flex;
+            justify-content: space-between;
             width: 400px;
+            border-bottom: 1px solid #cccccc;
+            padding-bottom: 10px;
+        }
+
+        .fonte {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .manchete {
+            margin: 5px 0;
+        }
+
+        .horario {
+            color: gray;
+            font-size: 12px;
+        }
+
+        .thumb {
+            width: 70px;
+            height: 70px;
+            background-color: lightgray;
         }
     </style>
 </head>
 <body>
 
+    <h1>Tag header</h1>
+
     <header>
-        <h1>Portal de Notícias</h1>
+
+        <div class="noticia">
+            <div>
+                <p class="fonte">InfoMoney</p>
+                <p class="manchete">Preços no mercado livre operam próximos à estabilidade apesar de seca...</p>
+                <p class="horario">2 horas atrás</p>
+            </div>
+            <div class="thumb"></div>
+        </div>
+
+        <div class="noticia">
+            <div>
+                <p class="fonte">CNN</p>
+                <p class="manchete">Nobel da Paz: conheça nomes cotados para o prêmio deste ano, que será conhecido nest...</p>
+                <p class="horario">3 horas atrás</p>
+            </div>
+            <div class="thumb"></div>
+        </div>
+
+        <div class="noticia">
+            <div>
+                <p class="fonte">QM</p>
+                <p class="manchete">Três Poderes jamais devem avançar sobre "competências alheias", diz Arthur Lira</p>
+                <p class="horario">4 horas atrás</p>
+            </div>
+            <div class="thumb"></div>
+        </div>
+
+        <div class="noticia">
+            <div>
+                <p class="fonte">R7.com</p>
+                <p class="manchete">Japão inicia segunda fase de despejo de água da central nuclear de Fukushima</p>
+                <p class="horario">7 horas atrás</p>
+            </div>
+            <div class="thumb"></div>
+        </div>
+
+        <div class="noticia">
+            <div>
+                <p class="fonte">Terra</p>
+                <p class="manchete">Avião derrapa e explode em aeroporto em Cuiabá; duas pessoas morreram</p>
+                <p class="horario">6 horas atrás</p>
+            </div>
+            <div class="thumb"></div>
+        </div>
+
+        <div class="noticia">
+            <div>
+                <p class="fonte">g1</p>
+                <p class="manchete">Rompimento de lago glacial após fortes chuvas deixa 14 mortos e 102 desaparecidos...</p>
+                <p class="horario">14 horas atrás</p>
+            </div>
+            <div class="thumb"></div>
+        </div>
+
     </header>
+
+    <hr>
 
     <nav>
         <a href="#">Início</a>
         <a href="#">Esportes</a>
         <a href="#">Tecnologia</a>
     </nav>
-
-    <hr>
-
-    <main>
-
-        <div class="card">
-            <h2>Manchete 1</h2>
-            <p>Portal: G1</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-
-        <div class="card">
-            <h2>Manchete 2</h2>
-            <p>Portal: ESPN Brasil</p>
-            <p>Aenean commodo ligula eget dolor. Aenean massa.</p>
-        </div>
-
-        <div class="card">
-            <h2>Manchete 3</h2>
-            <p>Portal: Valor Econômico</p>
-            <p>Nascetur ridiculus mus. Donec quam felis.</p>
-        </div>
-
-        <div class="card">
-            <h2>Manchete 4</h2>
-            <p>Portal: Folha</p>
-            <p>Nulla consequat massa quis enim.</p>
-        </div>
-
-    </main>
 
     <hr>
 
